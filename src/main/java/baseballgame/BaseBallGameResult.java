@@ -7,7 +7,6 @@ public class BaseBallGameResult {
     private GameResultType gameResultType;
     private boolean result = true;
 
-
     public int getStrikeCount() {
         return strikeCount;
     }

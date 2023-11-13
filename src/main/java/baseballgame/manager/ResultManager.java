@@ -8,4 +8,7 @@ public class ResultManager {
         inputBalls.compareBalls(answerBalls);
     }
 
+    public static boolean reGameCheck(int input) {
+        return input == 1 ? true : false;
+    }
 }

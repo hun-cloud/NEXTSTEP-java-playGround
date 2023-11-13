@@ -4,6 +4,7 @@ import baseballgame.BaseBallGameResult;
 
 public class PrintManager {
 
+    private static final String inputText = "숫자를 입력하세요 : ";
     private static final String ballText = "볼";
     private static final String strikeText = "스트라이크";
     private static final String outText = "낫띵";
@@ -30,6 +31,11 @@ public class PrintManager {
         if (strikeCount == 3) {
             sb.append("\n").append(winText);
         }
+
         System.out.println(sb);
+    }
+
+    public static void printInput() {
+        System.out.print("숫자를 입력하세요 : ");
     }
 }

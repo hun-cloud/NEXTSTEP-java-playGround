@@ -11,6 +11,7 @@ public class BaseballGameManager {
         boolean flag = true;
 
         while (flag) {
+            PrintManager.printInput();
             String input = InputManager.getInput();
             Balls inputBalls = CommonParser.toBalls(input);
             Balls answerBalls = CommonParser.toBalls(answer);
@@ -21,7 +22,7 @@ public class BaseballGameManager {
 
             PrintManager.printResult(baseBallGameResult);
 
-            flag = InputManager.getInputResult();
+            flag = InputManager.getInputResult(baseBallGameResult.isResult());
         }
     }
 }
